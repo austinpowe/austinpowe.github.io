@@ -1,0 +1,26 @@
+p {
+	font-family: Tw Cen MT;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.intro {
+	width: 50%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.intro img {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+#writes {
+	float: left;
+}
+
+#draws {
+	float: right;
+}
