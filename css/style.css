@@ -26,6 +26,11 @@ body:after {
 	float: right;
 }
 
+.content-images {
+	margin: 5% 5% 10% 25%;
+	float: right;
+}
+
 
 
 
@@ -66,6 +71,10 @@ p {
 	margin-bottom: 1em;
 }
 
+.fineprint {
+	font-size: 12px;
+}
+
 p a {
 	color: inherit;
 }
@@ -91,8 +100,9 @@ p a {
 
 .Austin {
 	font-family: 'Playfair Display', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
+	line-height: 1em;
 	margin-bottom: 0;
 	font-style: italic;
 }
@@ -107,53 +117,53 @@ p a {
 	padding-bottom: 1em;
 }
 
-.occupation {
-	display: none;
-	margin-top: -.5em;
-	font-size: 12px;
+.hide {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 }
 
-.nav .owner a {
+.menu .owner a {
 	padding: 0 0 0 0;
 	text-decoration: none;
 	color: #000;
 	line-height: inherit;
 }
-.nav .owner a:hover {
+.menu .owner a:hover {
 	color: #FFF;
 }
 
 
 /* responsive nav */
 
-.nav {
+.menu {
 	position: absolute;
 	margin: 5% 0 0 5%;
 	float: left;
 	background: #EEE;
 	padding: 15px 25px 15px 25px;
 }
-.nav ul {
+.menu ul {
 	margin: 0;
 	padding: 0;
 }
-.nav li {
+.menu li {
 	margin: 0 5px 10px 0;
 	padding: 0;
 	list-style: none;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
-.nav a {
+.menu a {
 	padding: 3px 12px;
 	text-decoration: none;
 	color: #999;
 	line-height: 100%;
 }
-.nav a:hover {
+.menu a:hover {
 	color: #000;
 }
-.nav .current a {
+.menu .current a {
 	background: #999;
 	color: #fff;
 	border-radius: 5px;
@@ -167,7 +177,7 @@ p a {
 
 @media screen and (max-width: 1000px) {
 
-	.nav {
+	.menu {
 		position: relative;
 		border: none;
 		width: 100%;
@@ -175,49 +185,49 @@ p a {
 		margin: 0 0 10% 0;
 		padding: 0 0 0 0;
 	}	
-	.nav ul {
+	.menu ul {
 		padding: 10px;
 		position: absolute;
 		width: 100%;
 		border: solid 1px #aaa;
 		background: #fff;
 	}
-	.nav li {
+	.menu li {
 		display: none; /* hide all <li> items */
 		margin: 0;
 	}
-	.nav .current {
+	.menu .current {
 		display: block; /* show only current <li> item */
 	}
 
-	.nav a {
+	.menu a {
 		display: block;
 		padding: 5px 5px 5px 32px;
 		text-align: left;
 	}
-	.nav .current a {
+	.menu .current a {
 		background: none;
 		color: #666;
 		text-align: left;
 	}
 
 	/* on nav hover */
-	.nav ul:hover {
+	.menu ul:hover {
 		background-image: none;
 	}
-	.nav ul:hover li {
+	.menu ul:hover li {
 		display: block;
 		margin: 0 0 5px;
 	}
 
 	/* right nav */
-	.nav.right ul {
+	.menu.right ul {
 		left: auto;
 		right: 0;
 	}
 
 	/* center nav */
-	.nav.center ul {
+	.menu.center ul {
 		left: 50%;
 		margin-left: -90px;
 	}
@@ -230,8 +240,7 @@ p a {
 	.occupation {
 	display: block;
 	}
-
-
+}
 
 
 /* Responsive YouTube videos */
