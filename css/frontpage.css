@@ -24,14 +24,13 @@ p {
 .intro {
 	width: 50%;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .intro img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+	padding-top: 20%;
 }
 
 #writes {
@@ -46,12 +45,11 @@ p {
 
 .intro img {
 	width: 80%;
+	padding-top: 5%;
 }
 
 .intro {
 	width: 100%;
-	top: 5%;
-	transform: translateY(0%);
 }
 
 #writes {
