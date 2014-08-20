@@ -6,7 +6,7 @@ body:before, body:after {
     background: #900;
     left: 0;
     right: 0;
-    height: 5px;
+    height: 4px;
 }
 body:before {
     top: 0;
@@ -22,7 +22,7 @@ body:after {
 /* width of content */
 
 .content {
-	margin: 5% 25% 10% 25%;
+	margin: 5% 20% 10% 28%;
 	float: right;
 }
 
@@ -99,18 +99,20 @@ p a {
 }
 
 .Austin {
-	font-family: 'Playfair Display', sans-serif;
-	font-size: 16px;
 	font-weight: bold;
 	line-height: 1em;
 	margin-bottom: 0;
-	font-style: italic;
+	letter-spacing: -0.05em;
+	text-transform: uppercase;
+	color: #000;
 }
 
-.Does {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: normal;
+.occupation {
+	display: none;
+}
+
+.menu-label {
+	display: none;
 }
 
 .owner {
@@ -175,22 +177,52 @@ p a {
 
 /* nav media queries */
 
-@media screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
+
+	.content {
+		margin: 0% 10% 10% 10%;
+	}
+
+	.content-images {
+		margin: 5% 10% 10% 10%;
+		float: right;
+	}
+
+	.owner {
+		margin-top: 5%;
+	}
+
+	.occupation {
+	display: inline;
+	}
+
+	.menu-label {
+		display: inline;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
+		color: #900;
+	}
+
+	h1 {
+		padding-top: .5em;
+	}
 
 	.menu {
 		position: relative;
 		border: none;
-		width: 100%;
+		width: 80%;
 		background: none;
-		margin: 0 0 10% 0;
-		padding: 0 0 0 0;
+		margin: 0% 10% 50px 10%;
+		padding: 0 0 1% 0;
 	}	
 	.menu ul {
-		padding: 10px;
+		padding: 10px 10px 10px 20px;
 		position: absolute;
-		width: 100%;
-		border: solid 1px #aaa;
+		width: 250px;
+		border: solid 4px #900;
 		background: #fff;
+		border-radius: 5px;
+		z-index: 999;
 	}
 	.menu li {
 		display: none; /* hide all <li> items */
@@ -202,7 +234,7 @@ p a {
 
 	.menu a {
 		display: block;
-		padding: 5px 5px 5px 32px;
+		padding: 5px 5px 5px 5px;
 		text-align: left;
 	}
 	.menu .current a {
@@ -232,14 +264,23 @@ p a {
 		margin-left: -90px;
 	}
 
-	.owner {
-		margin-top: 5%;
-		margin-left: 25%;
+	.menu li {
+		text-align: left;
+		list-style: none;
+		font-family: 'Playfair Display', serif;
+		font-size: 12px;
+		font-weight: 800;
+		font-style: italic;
 	}
 
-	.occupation {
-	display: block;
+	.menu li a {
+		text-align: left;
+		text-transform: none;
+		font-weight: 400;
+		font-family: 'Open Sans', sans-serif;
+		font-style: normal;
 	}
+
 }
 
 
