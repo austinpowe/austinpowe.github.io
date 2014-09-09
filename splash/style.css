@@ -1,0 +1,104 @@
+body {
+	background-color: #edda95;
+}
+
+.content-wrapper {
+	width: 80%;
+	padding: 5% 5%;
+	margin: 0 auto;
+	background-color: #fFF;
+}
+
+.smaller-column {
+	width: 40%;
+}
+
+h1 {
+	font-family: "Roboto";
+	font-weight: 800;
+	font-size: 8em;
+	color: #f27b73;
+	line-height: 1em;
+}
+
+.bottom-line {
+	width: 40%;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-bottom: 15px #f27b73 solid;
+	float: left;
+	display: block;
+}
+
+h2 {
+	font-family: "Roboto Condensed";
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	font-size: 36px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	color: #f27b73;
+}
+
+p {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 18px;
+	padding-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+.austin-image {
+	margin-top: -3em;
+	display: block;
+	width: 50%;
+	float: right;
+	display: block;
+}
+
+.site-previews {
+	width: 55%;
+	padding-left: 5%;
+	float: right;
+	display: block;
+}
+
+.site-previews img {
+	width: 100%;
+}
+
+.site-descriptions {
+	width: 40%;
+	float: left;
+	display: block;
+}
+
+.separator {
+	clear: both;
+	padding-top: 3.5em;
+}
+
+@media all and (max-width: 1000px) {
+
+.content-wrapper {
+	width: 80%;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 12px;
+}
+
+}
