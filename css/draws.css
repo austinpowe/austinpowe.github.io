@@ -18,7 +18,7 @@ ul.rig li {
 	-webkit-box-sizing: border-box;
 }
 ul.rig li img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	margin: 0 0 10px;
 }
