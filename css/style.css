@@ -69,6 +69,10 @@ h2 a {
 	color: inherit;
 }
 
+.blog-credit {
+	color: #555;
+}
+
 h3 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
