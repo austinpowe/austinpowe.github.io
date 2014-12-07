@@ -41,8 +41,13 @@ ul {
 .static-intro {
   background: url('../assets/mobile-header.png');
   background-size: cover;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 10% 15% 10%;
   position: relative;
+  background-position: right top;
+}
+
+.mobile-intro {
+	display: none;
 }
 
 .static-intro h1, h2 {
@@ -452,7 +457,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 /* MEDIA QUERIES */
 
     @media only screen and (min-width : 769px), only screen and (min-device-width : 769px) {
-    		display: none;
+
+    	.mobile-intro {
+    	display: none;
     	}
 
     	.product-side-image-mobile {
@@ -471,6 +478,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px), only screen and (max-device-width : 992px) {
+    	
+    	.mobile-intro {
+    	display: inline-block;
+   		 }
+
     	#buybutton {
     		font-size: 18px;
     	}
@@ -528,7 +540,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 
     	.static-intro h1 {
     		font-size: 24px;
-    		margin-top: 1.5em;
+    		margin-top: 7em;
     	}
 
     	.quickbuy {
