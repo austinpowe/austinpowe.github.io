@@ -26,7 +26,7 @@ ul {
 	position: absolute;
 	margin-top: 30%;
 	margin-left: 11%;
-	width: 50%;
+	width: 60%;
 	z-index: 100;
 }
 
@@ -91,7 +91,7 @@ video {
   text-transform: uppercase;
   text-align: left;
   padding: 12px;
-  margin-top: 13em;
+  margin-top: 11em;
   position: absolute;
   text-decoration: none;
 }
@@ -103,19 +103,6 @@ video {
 #fullvideobutton a:hover {
   color: #b2d236;
   text-decoration: underline;
-}
-
-#downbutton {
-  	margin-left: auto;
-  	margin-right: auto;
-	position: absolute;
-	left: 0;
-	right: 0;
-}
-
-#downbutton a {
-	text-decoration: none;
-	color: #ea5404;
 }
 
 /* THREE IMAGES 'HOW' SECTION */
@@ -204,7 +191,6 @@ video {
 /* PRODUCT SECTION */
 
 .fiddypercentcolumn {
-	padding-top: 9%;
 	width:35%;
 	margin-left: 6%;
 	display: inline-block;
@@ -259,11 +245,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .centered-product {
-	width: 50%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
+}
+
+.centered-product .product-image {
+	width: 60%;
+	margin-bottom: 2em;
 }
 
 .product-buybutton {
@@ -462,10 +453,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
     	display: none;
     	}
 
-    	.product-side-image-mobile {
-    		display: none;
-    	}
-
     	.centered-product {
     		display: none;
     	}
@@ -478,10 +465,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px), only screen and (max-device-width : 992px) {
-    	
-    	.mobile-intro {
-    	display: inline-block;
-   		 }
 
     	#buybutton {
     		font-size: 18px;
@@ -492,7 +475,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 			margin-top: 4em;
 		}
 
-		h2 {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px), only screen and (max-device-width : 768px) {
+    	    	.mobile-intro {
+    	display: inline-block;
+   		 }
+
+    	h2 {
 			font-size: 42px;
 		}
 
@@ -508,10 +499,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 			margin-top: 9em;
 			padding: 6px;
 		}
-    }
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px), only screen and (max-device-width : 768px) {
+		.product-slide .fiddypercentcolumn h1 {
+			font-size: 42px;
+		}
+
+		.product-slide .fiddypercentcolumn li {
+			font-size: 24px;
+		}
+
+		.centered-product {
+			display: inline-block;
+		}
+
+		.product-side-image {
+			display: none;
+		}
+
+
+
     	.desktop-intro {
     		display: none;
     	}
@@ -540,36 +546,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
     	#logo {
     		position: relative;
     		margin-left: 0;
+    		width: 35%;
     	}
 
     	.quickbuy {
-    		margin-top: 1em;
+    		margin-top: 2em;
     	}
 
     	.quickbuy a {
     		text-decoration: none;
-    		font-size: 18px;
+    		font-size: 22px;
     		color: #fff;
     		background-color: #ea5404;
     		padding: 5px;
     		border-radius: 4px;
     	}
 
-
-		.product-side-image {
-			display: none;
-		}
-
 		.fiddypercentcolumn {
 			width: 85%;
-		}
-
-		.product-slide .fiddypercentcolumn h1 {
-			font-size: 24px;
-		}
-
-		.product-slide .fiddypercentcolumn li {
-			font-size: 12px;
 		}
 
 		ul {
@@ -577,7 +571,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 		}
 
 		.contact-form a {
-			font-size: 12px;
+			font-size: 18px;
 		}
 
 		.quartercolumns h2 {
@@ -609,12 +603,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 			width: 45%;
 		}
 
+		.product-buybutton {
+			width: 50%;
+		}
+
 		.product-buybutton h3 {
-			font-size: 32px;
+			font-size: 44px;
 		}
 
 		.product-buybutton p {
-			font-size: 12px;
+			font-size: 22px;
 		}
 
 		.product-buybutton {
