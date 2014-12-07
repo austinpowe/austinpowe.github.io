@@ -608,15 +608,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2005f', end
 		}
 
 		.product-buybutton h3 {
-			font-size: 44px;
+			font-size: 84px;
 		}
 
 		.product-buybutton p {
-			font-size: 22px;
+			font-size: 32px;
 		}
 
 		.product-buybutton {
 			margin-top: 0em;
+		}
+
+		.links ul {
+			font-size: 14px;
+		}
+
+		.social-icons {
+			width: 15%;
 		}
 
     }
